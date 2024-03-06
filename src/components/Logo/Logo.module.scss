@@ -1,0 +1,10 @@
+.Logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &__text {
+    font-size: 32px;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,17 @@
+.link {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+.container {
+  width: min(100% - 30px, 1440px);
+  margin-inline: auto;
+  padding: 42px 0;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content 1fr;
+  column-gap: 32px;
+  row-gap: 16px;
+  // align-items: stretch;
+}

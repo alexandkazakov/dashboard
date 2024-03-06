@@ -1,0 +1,19 @@
+<svg width="1440" height="1006" viewBox="0 0 1440 1006" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clipPath="url(#clip0_26_3702)">
+<path opacity="0.55" d="M1063.98 704.708C942.524 976.89 895.029 1082.45 686.618 1082.45C478.207 1082.45 -2.05581 976.66 -320.526 762.951C-745.37 398.144 1203.52 -138.736 1316.97 -59.0484C1439.52 42.3729 1080.62 667.424 1063.98 704.708Z" fill="url(#paint0_radial_26_3702)"/>
+<path d="M1492 767.5C1492 1082.58 1236.58 1338 921.5 1338C606.422 1338 351 1082.58 351 767.5C351 452.422 798.422 -72.5 1113.5 -72.5C1428.58 -72.5 1492 452.422 1492 767.5Z" fill="url(#paint1_radial_26_3702)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_26_3702" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(617.474 1049.45) rotate(-62.9489) scale(1107.12 2999.29)">
+<stop stop-color="#BCFF5E"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_26_3702" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1378.5 1102.5) rotate(-132.084) scale(1236.92 1236.92)">
+<stop stop-color="#799DF7"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_26_3702">
+<rect width="1440" height="1006" fill="white"/>
+</clipPath>
+</defs>
+</svg>

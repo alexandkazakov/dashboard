@@ -1,0 +1,69 @@
+@import "../../scss/colors.scss";
+
+.Calendar {
+  position: relative;
+
+  &__calendar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    border: 2px solid #2dc4ce;
+    border-radius: 24px;
+    background-color: var(--background-events);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+
+    &--open {
+      display: block;
+    }
+
+    &_value {
+      position: absolute;
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      background-color: var(--background-element);
+      border-radius: 24px;
+      font-size: 18px;
+      padding: 10px 32px;
+      width: max-content;
+      font-weight: 300;
+      transition:
+        font-size 0.3s ease-in-out,
+        padding 0.3s ease-in-out,
+        opacity 0.3s ease-in-out,
+        visibility 0.3s ease-in-out,
+        background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: var(--element-hover);
+      }
+
+      &--hide {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    cursor: pointer;
+    transition:
+      background-color 0.3s ease-in-out,
+      font-size 0.3s ease-in-out,
+      padding 0.5s ease-in-out,
+      top 0.3s ease-in-out;
+    z-index: 1;
+    user-select: none;
+    position: absolute;
+    top: -20px;
+    width: max-content;
+    visibility: hidden;
+  }
+}

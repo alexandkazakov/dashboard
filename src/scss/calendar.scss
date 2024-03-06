@@ -1,0 +1,147 @@
+@import "./colors.scss";
+
+.react-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__tile {
+    &--active {
+      background: var(--color-blue) !important;
+      color: var(--text-color) !important;
+    }
+
+    &--range {
+      border-radius: 0;
+
+      &:hover {
+        border-radius: 0 !important;
+        color: var(--text-color) !important;
+      }
+    }
+
+    &--rangeStart {
+      border-radius: 4px 0 0 4px;
+
+      &:hover {
+        border-radius: 4px 0 0 4px !important;
+      }
+    }
+
+    &--rangeEnd {
+      border-radius: 0 4px 4px 0;
+
+      &:hover {
+        border-radius: 0 4px 4px 0 !important;
+      }
+    }
+
+    &--rangeBothEnds {
+      border-radius: 4px;
+      &:hover {
+        border-radius: 4px !important;
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+
+    &__label {
+      background: none;
+      border: unset;
+      color: var(--text-color);
+
+      &:hover {
+        color: var(--color-blue-light);
+      }
+    }
+
+    &__arrow {
+      border: unset;
+      background: none;
+      cursor: pointer;
+      color: var(--text-color);
+
+      &:hover {
+        color: var(--color-blue);
+      }
+    }
+  }
+
+  &__month-view {
+    &__days {
+      button {
+        &:disabled {
+          color: var(--color-grey);
+          &:hover {
+            background: unset;
+            color: var(--color-grey);
+            cursor: default;
+          }
+        }
+
+        color: var(--text-color);
+      }
+      &__day {
+        background: unset;
+        border: none;
+        min-height: 30px;
+        max-width: 30px;
+
+        &:hover {
+          border-radius: 4px;
+          background: var(--color-blue);
+          color: var(--text-color);
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__weekdays {
+      margin-bottom: 5px;
+
+      &__weekday {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+
+        abbr {
+          color: #a3a3a3;
+          text-decoration: unset;
+        }
+      }
+    }
+  }
+
+  &__year-view {
+    &__months {
+      &__month {
+        &:nth-last-child(-n + 3) {
+          margin-bottom: unset;
+        }
+      }
+    }
+  }
+
+  &__century-view__decades__decade,
+  &__decade-view__years__year,
+  &__year-view__months__month {
+    background: unset;
+    border: none;
+    color: var(--text-color);
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: unset;
+    }
+
+    &:hover {
+      color: var(--green);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../../scss/colors.scss";
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: var(--background-element);
+  border-radius: 24px;
+  transition: background-color 0.2s ease-in-out;
+
+  &__title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+}

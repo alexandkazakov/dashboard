@@ -1,0 +1,58 @@
+:root {
+  // General
+  --color-black: #121212;
+  --color-white: #ffffff;
+  --color-blue: #0ac6c2;
+  --color-blue-darker: #0eafac;
+  --color-blue-light: #03cdb5;
+  --color-blue-dark: #0f1024;
+  --color-grey-light: #e7e7e7;
+  --color-grey: #8b8b8b;
+  --color-green: #10bf6a;
+
+  --color-blue-40: rgba(124, 114, 246, 0.4);
+  --color-blue-24: rgba(124, 114, 246, 0.24);
+  --color-purple-8: rgba(171, 0, 255, 0.08);
+  --color-purple-24: rgba(171, 0, 255, 0.24);
+
+  --color-white-4: rgba(255, 255, 255, 0.04);
+  --color-white-8: rgba(255, 255, 255, 0.08);
+  --color-white-24: rgba(255, 255, 255, 0.24);
+  --color-white-32: rgba(255, 255, 255, 0.32);
+  --color-white-56: rgba(255, 255, 255, 0.56);
+
+  --color-chart-marked: #06deec;
+  --color-chart-vsp: #9747ff;
+  --color-chart-success: #5c6aff;
+
+  --chevron: url("/images/chevron-black.svg");
+  --chevron-black: url("/images/chevron.svg");
+}
+
+[data-theme="light"] {
+  --background-page: var(--color-grey-light);
+  --background-block: var(--color-white-32);
+  --background-element: var(--color-white-56);
+
+  --element-active: var(--color-blue-40);
+  --element-hover: var(--color-purple-8);
+
+  --btn-cancel: var(--color-white-24);
+
+  --text-color: var(--color-black);
+  --chevron-svg: var(--chevron);
+}
+
+[data-theme="dark"] {
+  --background-page: var(--color-blue-dark);
+  --background-block: var(--color-white-4);
+  --background-element: var(--color-white-8);
+
+  --element-active: var(--color-blue-40);
+  --element-hover: var(--color-blue-24);
+
+  --btn-cancel: var(--color-white-8);
+
+  --text-color: var(--color-white);
+  --chevron-svg: var(--chevron-black);
+}

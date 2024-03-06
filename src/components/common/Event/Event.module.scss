@@ -1,0 +1,147 @@
+@import "../../../scss/colors.scss";
+
+.Event {
+  display: none;
+  width: 100%;
+
+  &--visible {
+    display: block;
+  }
+
+  &__block {
+    padding: 24px;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.04);
+    overflow: hidden;
+
+    &--edit {
+      outline: 2px solid rgba(171, 0, 255, 0.16);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__edit-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__save-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  }
+
+  &__cancel-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  }
+
+  &__password {
+    padding: 4px 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 140%;
+    color: #fff;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  &__text {
+    max-height: 353px;
+    overflow: auto;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__item {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 140%;
+    text-indent: 10px;
+    min-height: 18px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    padding: 3px 0 4px 16px;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url("/images/arrow-left.svg");
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      border-color: #fff;
+    }
+  }
+
+  &__editor {
+    width: 100%;
+    height: 353px;
+  }
+}

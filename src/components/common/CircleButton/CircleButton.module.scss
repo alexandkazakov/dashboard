@@ -1,0 +1,12 @@
+.CircleButton {
+  display: flex;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--background-element);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--background-events);
+  }
+}

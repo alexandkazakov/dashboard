@@ -1,0 +1,41 @@
+@import "../../scss/colors.scss";
+
+.Filters {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: var(--background-block);
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 24px;
+
+  &__period {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &__btnsGroup {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+  }
+
+  &__uploadBtn {
+    &--active {
+      opacity: 0.3;
+    }
+  }
+
+  // &__switcher {
+  //   position: absolute;
+  //   right: 24px;
+  // }
+}

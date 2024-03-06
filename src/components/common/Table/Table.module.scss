@@ -1,0 +1,42 @@
+.Table {
+  display: grid;
+  column-gap: 24px;
+  row-gap: 16px;
+
+  &__columns {
+    display: grid;
+    gap: 15px;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e7e7e7;
+    text-align: center;
+    width: 48px;
+
+    &:first-child {
+      width: unset;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &--result {
+      color: #4bd9b1;
+    }
+  }
+}
+
+div#name {
+  text-align: unset !important;
+}
